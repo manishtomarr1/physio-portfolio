@@ -18,7 +18,7 @@ export default function Introduction() {
       <div className="max-w-3xl lg:max-w-none lg:ml-0">
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl font-bold text-blue-600 mb-1 mt-1">
-          Hi, I'm Virta
+          Hi, I&apos;m Virta
         </h1>
 
         {/* Subheading */}

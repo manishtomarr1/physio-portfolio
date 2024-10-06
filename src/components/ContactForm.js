@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from 'react';
-import emailjs from 'emailjs-com'; // Ensure emailjs-com is installed
+import emailjs from 'emailjs-com';
 import { FaLinkedin } from 'react-icons/fa';
 import Image from 'next/image';
-import hiImage from '../assets/hi.png'; // Image you provided
+import hiImage from '../assets/hi.png'; // Image provided
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -45,12 +45,12 @@ export default function ContactForm() {
     emailjs
       .send(
         'service_cw5exzj', // Your Email.js service ID
-        'template_pa30md4', // Your Email.js template ID (replace this with the actual Template ID)
+        'template_pa30md4', // Your Email.js template ID
         formData,
-        '__VeVc5QpZxBesMFv' // Your Email.js Public Key
+        '1LRgJyQnKzbS932ig' // Your Email.js Public Key
       )
       .then(
-        (response) => {
+        () => {
           setFormSubmitted(true); // Show success message
         },
         (error) => {
@@ -77,7 +77,7 @@ export default function ContactForm() {
       
       {/* LinkedIn Icon */}
       <div className="mb-6">
-        <a href="https://www.linkedin.com/in/your-linkedin-profile/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/virta-choudhary-7534a0237/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin size={32} className="text-blue-600 hover:text-blue-800" />
         </a>
       </div>
