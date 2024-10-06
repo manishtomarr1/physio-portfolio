@@ -47,7 +47,7 @@ export default function ContactForm() {
         'service_cw5exzj', // Your Email.js service ID
         'template_pa30md4', // Your Email.js template ID
         formData,
-        '1LRgJyQnKzbS932ig' // Your Email.js Public Key
+        '__VeVc5QpZxBesMFv' // Your Email.js Public Key
       )
       .then(
         () => {
